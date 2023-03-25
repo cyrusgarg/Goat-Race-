@@ -19,7 +19,7 @@ class Board:
         self.positions = {}                                 #creates a dictionary. Each position on the board is a stack.
         for row in range(self.height):
             for col in range(self.width):
-                position = str(row) + str(col)             #creates position name
+                position = str(row) + str(col)             #creates position name like '00'
                 self.positions[position] = Stack()         #set each position value as a stack object
 
     def check_row(self,row:int)-> bool:
